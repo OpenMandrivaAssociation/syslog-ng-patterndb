@@ -9,9 +9,8 @@ Summary:    Syslog-ng pattern database
 License:    GPL
 Group:      Graphical desktop/GNOME
 URL:        http://www.balabit.com/downloads/files/patterndb-snapshot
-Source0     http://www.balabit.com/downloads/files/patterndb-snapshot/patterndb-%{version}.zip
+Source0:    http://www.balabit.com/downloads/files/patterndb-snapshot/patterndb-%{version}.zip
 BuildArch:      noarch
-BuildRoot:      %{_tmppath}/%{name}-%{version}
 
 %description
 This package contains a pattern database for syslog-ng.
@@ -22,14 +21,8 @@ This package contains a pattern database for syslog-ng.
 %build
 
 %install
-rm -rf %{buildroot}
 install -d -m 755 %{buildroot}%{_datadir}/syslog-ng
 install -m 644 *.xml %{buildroot}%{_datadir}/syslog-ng
 
-%clean
-rm -rf %{buildroot}
-
 %files
-%defattr(-,root,root)
 %{_datadir}/syslog-ng
-
