@@ -1,6 +1,6 @@
 %define	name	syslog-ng-patterndb
 %define	version	20091209
-%define	release	%mkrel 2
+%define release	3
 
 Name:		%{name}
 Version:	%{version}
