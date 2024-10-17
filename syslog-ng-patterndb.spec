@@ -8,7 +8,7 @@ Release:	%{release}
 Summary:    Syslog-ng pattern database
 License:    GPL
 Group:      Graphical desktop/GNOME
-URL:        http://www.balabit.com/downloads/files/patterndb-snapshot
+URL:        https://www.balabit.com/downloads/files/patterndb-snapshot
 Source0:    http://www.balabit.com/downloads/files/patterndb-snapshot/patterndb-%{version}.zip
 BuildArch:      noarch
 
